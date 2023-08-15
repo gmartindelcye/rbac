@@ -1,0 +1,25 @@
+[project]
+name = "RBAC"
+version = "0.1.0"
+description = "Simple Role Based Access Control in FastAPI"
+authors = [
+    {name = "Gabriel Martin del Campo", email = "gmartindelcye@gmail.com"},
+]
+dependencies = [
+    "fastapi>=0.101.1",
+    "uvicorn>=0.23.2",
+    "bcrypt>=4.0.1",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "flake8>=6.1.0",
+    "pytest>=7.4.0",
+]
